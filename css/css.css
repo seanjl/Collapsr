@@ -1,66 +1,71 @@
-html {
-    width: 100%;
-    height: 100%;
-    background-color: #121212 !important;
-}
-
-
-/* DARK MODE */
-
-.darkmode-bg {
-    background-color: #121212 !important;
-}
-
-.darkmode-bg-nav {
-    background-color: #1F1F1F !important;
-}
-
-.darkmode-card {
-    background-color: #1D1D1D !important;
-}
-
-
-/* CUSTOM CARDS */
-
-.card-dashboard {
-    max-width: 100%;
-    height: 100%;
-}
-
-.card-dash-item {
-    max-width: 95% !important;
-    margin: auto;
-    -ms-flex-direction: column;
-    border-radius: 2px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .14), 0 3px 4px 0 rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    position: relative;
-    word-wrap: break-word
-}
-
-.card-dash-item-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1rem
-}
-
-.card-dash-item-body:first-child {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px
-}
-
-.card-dash-item-body:last-child {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px
-}
-
-
-/* CUSTOM POISITION */
-
-.bottom-nav {
-    position: fixed !important;
-    bottom: 0 !important;
-}
+    html {
+        width: 100%;
+        height: 100%;
+        background-color: #121212 !important;
+    }
+    /* DARK MODE */
+    
+    .darkmode-bg {
+        background-color: #121212 !important;
+    }
+    
+    .darkmode-bg-nav {
+        background-color: #1F1F1F !important;
+    }
+    
+    .darkmode-card {
+        background-color: #1D1D1D !important;
+    }
+    /* CUSTOM CARDS */
+    
+    .card-dashboard {
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    .card-dash-item {
+        max-width: 95% !important;
+        margin: auto;
+        -ms-flex-direction: column;
+        border-radius: 2px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, .14), 0 3px 4px 0 rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        position: relative;
+        word-wrap: break-word
+    }
+    
+    .card-dash-item-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1rem
+    }
+    
+    .card-dash-item-body:first-child {
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px
+    }
+    
+    .card-dash-item-body:last-child {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px
+    }
+    /* CUSTOM POISITION */
+    
+    .bottom-nav {
+        position: fixed !important;
+        bottom: 0 !important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important
+    }
+    /* CUSTOM Width */
+    
+    .width-100 {
+        width: 100%;
+    }
+    
+    .height-4em {
+        height: 4em;
+    }
