@@ -91,10 +91,32 @@
     /* CUSTOM FONTS */
     
     @font-face {
-        font-family: 'Warpaint';
+        font-family: 'VTKS';
         src: url('../fonts/VTKS.ttf') format('truetype'), url('../fonts/VTKS.woff') format('truetype'), url('../fonts/VTKS.ttf') format('truetype');
     }
     
-    .font-warpaint {
-        font-family: Warpaint;
+    /* TITLE FONT */
+    .font-VTKS {
+        font-family: VTKS;
     }
+
+    /* HEADER FONT */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: VTKS;
+    }
+
+    /* HEADER FONT */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: VTKS;
+    }
+
+    /* CUSTOM TEXTS */
+    .text-respon {
+        font-size: 2vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .text-respon {
+            font-size: 5vw;
+        }
+      }
