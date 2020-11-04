@@ -401,7 +401,7 @@ $(function () {
         $('#js-news').ticker({
             htmlFeed: false,
             ajaxFeed: true,
-            feedUrl: 'https://www.diariolibre.com/rss/portada.xml',
+            feedUrl: 'https://www.reddit.com/r/collapse.rss',
             feedType: 'xml'
         });
     });
