@@ -94,6 +94,21 @@
         font-family: 'VTKS';
         src: url('../fonts/VTKS.ttf') format('truetype'), url('../fonts/VTKS.woff') format('truetype'), url('../fonts/VTKS.ttf') format('truetype');
     }
+
+    @font-face {
+        font-family: 'VMS';
+        src: url('../fonts/VMS.ttf') format('truetype'), url('../fonts/VMS.woff') format('truetype'), url('../fonts/VMS.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Transport';
+        src: url('../fonts/Transport.ttf') format('truetype'), url('../fonts/Transport.woff') format('truetype'), url('../fonts/Transport.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Signika';
+        src: url('../fonts/Signika-Light.ttf') format('truetype'), url('../fonts/Signika-Light.woff') format('truetype'), url('../fonts/Signika-Light.ttf') format('truetype');
+    }
     
     /* TITLE FONT */
     .font-VTKS {
@@ -102,12 +117,12 @@
 
     /* HEADER FONT */
     h1, h2, h3, h4, h5, h6 {
-        font-family: VTKS;
+        font-family: Transport !important;
+        color: #1be6f4 !important;
     }
 
-    /* HEADER FONT */
-    h1, h2, h3, h4, h5, h6 {
-        font-family: VTKS;
+    p {
+        font-family: 'Signika' !important;
     }
 
     /* CUSTOM TEXTS */
