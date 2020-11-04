@@ -401,7 +401,7 @@ $(function () {
         $('#js-news').ticker({
             htmlFeed: false,
             ajaxFeed: true,
-            feedUrl: 'https://www.reddit.com/r/collapse.rss',
+            feedUrl: 'http://feeds.bbci.co.uk/news/video_and_audio/uk/rss.xml',
             feedType: 'xml'
         });
     });
