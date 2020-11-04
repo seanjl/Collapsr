@@ -139,7 +139,7 @@
 #ticker-wrapper.has-js {
 	padding: 0px 20px;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 	height: 3em;
 	display: block;
 	background-color: #0e0e0e;
