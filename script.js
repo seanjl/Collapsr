@@ -401,7 +401,7 @@ $(function () {
         $('#js-news').ticker({
             htmlFeed: false,
             ajaxFeed: true,
-            feedUrl: 'http://feeds.bbci.co.uk/news/video_and_audio/uk/rss.xml',
+            feedUrl: 'http://rss.cnn.com/rss/edition_world.rss',
             feedType: 'xml'
         });
     });

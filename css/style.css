@@ -75,6 +75,11 @@
         -ms-flex-pack: center!important;
         justify-content: center!important
     }
+
+    .navbar-button {
+        position: relative;
+        z-index: 900;
+    }
     
     .bottom-nav-item {
         line-height: 3em;
@@ -113,21 +118,48 @@
     /* TITLE FONT */
     .font-VTKS {
         font-family: VTKS;
+        font-smooth: auto;
+    }
+
+    .font-signika {
+        font-family: 'Signika' !important;
+        font-smooth: auto;
     }
 
     /* HEADER FONT */
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h4, h6 {
         font-family: Transport !important;
         color: #1be6f4 !important;
+        font-smooth: auto;
+    }
+
+    h3 {
+        font-family: VMS !important;
+        color: #f4af1b !important;
+        font-smooth: auto;
+        font-size: 1rem !important; 
+    }
+
+    h5 {
+        font-family: Transport !important;
+        font-smooth: auto;
+        font-size: 1rem !important; 
     }
 
     p {
         font-family: 'Signika' !important;
+        font-smooth: auto;
+    }
+
+    .nav-item {
+        font-family: 'Transport' !important;
+        font-smooth: auto;
     }
 
     /* TICKER FONT */
     .font-ticker {
         font-family: VMS !important;
+        font-smooth: auto;
     }
 
     /* CUSTOM TEXTS */

@@ -272,13 +272,13 @@ summary {
 
 a {
   background-color: transparent;
-  color: #ff4081;
+  color: #ffffff;
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
 
 a:active, a:focus, a:hover {
-  color: #ff4081;
+  color: #dbeeff;
   text-decoration: underline;
 }
 
