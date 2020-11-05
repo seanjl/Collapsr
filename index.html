@@ -7,55 +7,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-    <title>Collapsr</title>
-    <link rel="stylesheet" href="css/css.css">
+    <title>CollapsrExplore | Collapsr</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/material.css">
     <link rel="stylesheet" href="css/material.css.map">
     <link rel="stylesheet" href="js/material.js">
     <link rel="stylesheet" href="js/material.js.map">
+    <link rel="stylesheet" href="js/jquery-3.5.1.min.js">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg darkmode-bg-nav darkmode-accent-txt">
-            <a class="navbar-brand mx-auto font-warpaint " href="#">Collapsr</a>
+            <a class="navbar-brand mx-auto font-VTKS " href="#main">Collapsr</a>
         </nav>
     </header>
 
-    <main class="card-dashboard darkmode-bg">
+    <!-- TICKER -->
+    <div id="ticker-wrapper" class="no-js">
+        <ul id="js-news" class="js-hidden">
+            <li class="news-item font-ticker"><a href="#">This is the 1st latest news item.</a></li>
+            <li class="news-item"><a href="#">This is the 2nd latest news item.</a></li>
+            <li class="news-item"><a href="#">This is the 3rd latest news item.</a></li>
+            <li class="news-item"><a href="#">This is the 4th latest news item.</a></li>
+        </ul>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+    <script  src="./script.js"></script>
+
+    <main class="card-dashboard darkmode-bg" id="main">
         <br>
-        <!-- First Card -->
+        <!-- POST-1 Card -->
         <div class="card-dash-item darkmode-card" data-aos="fade-up">
             <div class="card-dash-item-body darkmode-card">
-                <h5 class="card-title text-white">Card title</h5>
-                <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h2 class="card-title">THE COLLAPSE HAS STARTED</h2>
+                <h3 class="card-date">2020 nov 3</h3>
+                <p class="text-white text-respon">Climate change, information warfare, coronavirus, late stage capitalism, automation, economic collapse, wealth inqeuality, cultural incompatability...
+                    <br><br> Our way of life is being threatened like never before. Most people in the West didn't believe in 'The Collapse' until 2020, but this year has opened the eyes of many who previously didn't believe in conspiracy theories.
+                    <br><br> Welcome to Collapsr, a service which documents, explains and predicts the progressive decline of society.
+                </p>
+                <hr>
+                <a href="explore/2020/11/3-the_collapse_has_started.html"><h5 class="card-title text-right">READ MORE</h5></a>
             </div>
         </div>
     </main>
 
     <footer class="bottom-nav width-100 darkmode-bg-bnav">
         <nav class="nav justify-content-around height-4em">
-            <a class="nav-item nav-link bottom-nav-item darkmode-accent-txt" href="#">HOME</a>
-            <a class="nav-item nav-link bottom-nav-item darkmode-accent2-txt" href="#">EXPLORE</a>
-            <a class="nav-item nav-link bottom-nav-item darkmode-accent2-txt" href="#">Enjoy</a>
-            <a class="nav-item nav-link bottom-nav-item darkmode-accent2-txt" href="#">ABOUT</a>
+            <a class="nav-item nav-link bottom-nav-item darkmode-accent-txt" href="#main">HOME</a>
+            <a class="nav-item nav-link bottom-nav-item darkmode-accent2-txt" href="explore.html">EXPLORE</a>
+            <a class="nav-item nav-link bottom-nav-item darkmode-accent2-txt" href="info.html">INFO</a>
+            <a class="nav-item nav-link bottom-nav-item darkmode-accent2-txt" href="about.html">ABOUT</a>
         </nav>
     </footer>
 
-
-    <script src="assets/web/assets/jquery/jquery.min.js "></script>
-    <script src="assets/popper/popper.min.js "></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js "></script>
-    <script src="assets/smoothscroll/smooth-scroll.js "></script>
-    <script src="assets/dropdown/js/nav-dropdown.js "></script>
-    <script src="assets/dropdown/js/navbar-dropdown.js "></script>
-    <script src="assets/touchswipe/jquery.touch-swipe.min.js "></script>
-    <script src="assets/tether/tether.min.js "></script>
-    <script src="assets/theme/js/script.js "></script>
-    <script src="assets/formoid/formoid.min.js "></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
-
 
     <script type="text/javascript ">
         $(window).on('load', function() {
@@ -65,6 +72,37 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        var mouseY = 0;
+        var startMouseY = 0;
+        $('main').on('mousedown', function(ev) {
+            mouseY = ev.pageY;
+            startMouseY = mouseY;
+            $(document).on('mousemove', function(e) {
+                if (e.pageY > mouseY) {
+                    var d = e.pageY - startMouseY;
+                    console.log("d: " + d);
+                    if (d >= 200) {
+                        location.reload();
+                        $('main').append($('<img/>').attr('src', 'https://www.mormota.ro/skin/frontend/default/polysoft/images/spinner.gif'));
+                    }
+                    $('main').css('margin-top', d / 4 + 'px');
+                } else
+                    $(document).unbind("mousemove");
+
+
+            });
+        });
+        $('main').on('mouseup', function() {
+            $('main').css('margin-top', '0px');
+            $(document).unbind("mousemove");
+        });
+        $('main').on('mouseleave', function() {
+            $('main').css('margin-top', '0px');
+            $(document).unbind("mousemove");
+        });
     </script>
 
 
