@@ -38,6 +38,10 @@
         height: 100%;
     }
     
+    .navbar {
+        position: fixed;
+    }
+    
     .card-dash-item {
         max-width: 95% !important;
         margin: auto;
