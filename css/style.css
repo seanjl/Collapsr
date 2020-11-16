@@ -133,7 +133,7 @@
         min-width: 0;
         position: relative;
         word-wrap: break-word;
-        font-family: 'Signika';
+        font-family: 'Transport';
         font-size: 1rem !important;
         font-weight: 300 !important;
     }
@@ -197,8 +197,8 @@
     }
     
     @font-face {
-        font-family: 'Signika';
-        src: url('../fonts/Signika-Light.ttf') format('truetype'), url('../fonts/Signika-Light.woff') format('truetype'), url('../fonts/Signika-Light.ttf') format('truetype');
+        font-family: 'Transport';
+        src: url('../fonts/Transport-Light.ttf') format('truetype'), url('../fonts/Transport-Light.woff') format('truetype'), url('../fonts/Transport-Light.ttf') format('truetype');
     }
     
     .wiki-margin {
@@ -211,8 +211,8 @@
         font-smooth: auto;
     }
     
-    .font-signika {
-        font-family: 'Signika' !important;
+    .font-Transport {
+        font-family: 'Transport' !important;
         font-smooth: auto;
     }
     /* HEADER FONT */
@@ -246,7 +246,7 @@
     }
     
     p {
-        font-family: 'Signika' !important;
+        font-family: 'Roboto' !important;
         font-smooth: auto;
     }
     
