@@ -170,6 +170,10 @@
     .bottom-nav-item {
         line-height: 3em;
     }
+
+    .wiki-margin {
+        margin-bottom: 100em;
+    }
     /* CUSTOM Width */
     
     .width-100 {
@@ -181,33 +185,27 @@
     }
     /* CUSTOM FONTS */
     
+
     @font-face {
-        font-family: 'VTKS';
-        src: url('../fonts/VTKS.ttf') format('truetype'), url('../fonts/VTKS.woff') format('truetype'), url('../fonts/VTKS.ttf') format('truetype');
-    }
-    
-    @font-face {
-        font-family: 'VMS';
-        src: url('../fonts/VMS.ttf') format('truetype'), url('../fonts/VMS.woff') format('truetype'), url('../fonts/VMS.ttf') format('truetype');
+        font-family: 'Goldman';
+        src: url('../fonts/Goldman-Regular.ttf') format('truetype');
     }
     
     @font-face {
         font-family: 'Transport';
-        src: url('../fonts/Transport.ttf') format('truetype'), url('../fonts/Transport.woff') format('truetype'), url('../fonts/Transport.ttf') format('truetype');
+        src: url('../fonts/Transport.ttf') format('truetype');
     }
-    
+
     @font-face {
-        font-family: 'Transport';
-        src: url('../fonts/Transport-Light.ttf') format('truetype'), url('../fonts/Transport-Light.woff') format('truetype'), url('../fonts/Transport-Light.ttf') format('truetype');
+        font-family: 'MavenPro-Regular';
+        src: url('../fonts/MavenPro-Regular.ttf') format('truetype');
     }
     
-    .wiki-margin {
-        margin-bottom: 100vw;
-    }
-    /* TITLE FONT */
+ 
+    /* CUSTOM FONTS */
     
-    .font-VTKS {
-        font-family: VTKS;
+    .font-Goldman {
+        font-family: Goldman;
         font-smooth: auto;
     }
     
@@ -217,16 +215,16 @@
     }
     /* HEADER FONT */
     
-    h1,
+    h1, 
     h4,
     h6 {
-        font-family: Transport !important;
+        font-family: 'Transport' !important;
         color: #1be6f4 !important;
         font-smooth: auto;
     }
     
     h2 {
-        font-family: Transport !important;
+        font-family: 'Transport' !important;
         color: #fff !important;
         font-smooth: auto;
     }
@@ -239,7 +237,7 @@
     }
     
     h5 {
-        font-family: Transport !important;
+        font-family: 'Roboto' !important;
         font-smooth: auto;
         color: #1be6f4 !important;
         font-size: 1rem !important;
@@ -259,7 +257,7 @@
     }
     
     .nav-item {
-        font-family: 'Transport' !important;
+        font-family: 'MavenPro-Regular' !important;
         font-smooth: auto;
     }
     /* TICKER FONT */
@@ -268,7 +266,7 @@
         font-family: VMS !important;
         font-smooth: auto;
     }
-    /* CUSTOM TEXTS */
+    /* CUSTOM FONT SIZE */
     
     .text-respon {
         font-size: 1rem;
