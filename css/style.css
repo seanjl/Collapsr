@@ -80,6 +80,14 @@
         background-size: cover;
         background-position: 50% 50%;
     }
+
+    .about-img-logo {
+        display: block;
+        margin: auto;
+        max-width: 8em;
+    }
+
+    
     /*   MAIN & NAV */
     
     .navbar {
